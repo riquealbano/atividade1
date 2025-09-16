@@ -1,0 +1,8 @@
+<h2>Conversor de Temperatura</h2>
+
+<label>Digite em Celsius:</label>
+<input type="number" (input)="converter($event)">
+
+<p *ngIf="fahrenheit !== null">
+  Resultado: {{ fahrenheit }} °F
+</p>

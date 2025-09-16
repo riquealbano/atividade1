@@ -1,0 +1,23 @@
+<h2>Apólice de Seguro</h2>
+
+<label>Nome:</label>
+<input type="text" (input)="atualizarNome($event)">
+
+<label>Sexo:</label>
+<select (change)="atualizarSexo($event)">
+  <option value="M">Masculino</option>
+  <option value="F">Feminino</option>
+</select>
+
+<label>Idade:</label>
+<input type="number" (input)="atualizarIdade($event)">
+
+<label>Valor do Automóvel:</label>
+<input type="number" (input)="atualizarValor($event)">
+
+<br><br>
+<button (click)="calcular()">Calcular Apólice</button>
+
+<p *ngIf="apolice !== null">
+  Valor da Apólice: R$ {{ apolice }}
+</p>

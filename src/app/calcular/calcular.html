@@ -1,0 +1,12 @@
+<h2>Calcular Média</h2>
+
+AC1: <input type="number" (input)="n1 = $event.target.valueAsNumber"><br>
+AC2: <input type="number" (input)="n2 = $event.target.valueAsNumber"><br>
+AG:  <input type="number" (input)="n2 = $event.target.valueAsNumber"><br>
+AF:  <input type="number" (input)="n3 = $event.target.valueAsNumber"><br>
+
+<button (click)="Calcu  lar()">Calcular Média</button>
+
+<p *ngIf="media !== null">
+  Média: {{ media }} - {{ status }}
+</p>
